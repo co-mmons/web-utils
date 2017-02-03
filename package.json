@@ -1,0 +1,17 @@
+{
+    "name": "@co.mmons/web-utils",
+    "version": "1.0.0",
+    "author": "co.mmons",
+    "private": false,
+    "license": "MIT",
+    "scripts": {
+        "install": "node-utils-npm-install-dist",
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@co.mmons/node-utils": "git://github.com/co-mmons/node-utils"
+    },
+    "devDependencies": {
+        "typescript": "2.0.10"
+    }
+}
