@@ -9,9 +9,9 @@
         "build": "tsc"
     },
     "dependencies": {
-        "@co.mmons/node-utils": "git://github.com/co-mmons/node-utils"
+        "@co.mmons/node-utils": "git+https://github.com/co-mmons/node-utils.git"
     },
     "devDependencies": {
-        "typescript": "^2.2.2"
+        "typescript": "^2.4.1"
     }
 }
