@@ -1,7 +1,8 @@
+"use strict";
 /**
  * Copy of https://github.com/jkroso/prefix
  */
-"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var style = typeof document != 'undefined' ? document.createElement('p').style : {};
 var prefixes = ["O", "ms", "Moz", "Webkit"];
 var upper = /([A-Z])/g;
