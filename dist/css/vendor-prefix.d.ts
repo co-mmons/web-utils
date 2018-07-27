@@ -1,4 +1,7 @@
 /**
+ * Copy of https://github.com/jkroso/prefix
+ */
+/**
  * Memoized version of `prefix`
  *
  * @param {String} key
