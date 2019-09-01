@@ -12,6 +12,7 @@
         "@co.mmons/node-utils": "git+https://github.com/co-mmons/node-utils.git"
     },
     "devDependencies": {
+        "tslib": "^1.10.0",
         "typescript": "^2.9.0"
     },
     "sideEffects": false
