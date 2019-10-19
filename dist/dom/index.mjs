@@ -2,14 +2,14 @@ export function hasClassName(element, className) {
     return element.classList.contains(className);
 }
 export function getElementByClassName(element, className) {
-    var nodes = element.getElementsByClassName(className);
+    let nodes = element.getElementsByClassName(className);
     if (nodes.length > 0) {
         return nodes[0];
     }
     return null;
 }
 export function getParentElementByClassName(element, className, topParentElementClassName) {
-    var parent = element.parentElement;
+    let parent = element.parentElement;
     while (parent) {
         if (hasClassName(parent, className))
             return parent;
@@ -28,7 +28,7 @@ export function isSelfOrChildOf(element, parent, topParent) {
     if (element === parent) {
         return true;
     }
-    var par = element.parentElement;
+    let par = element.parentElement;
     while (par) {
         if (par === parent) {
             return true;

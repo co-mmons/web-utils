@@ -5,7 +5,7 @@ function hasClassName(element, className) {
 }
 exports.hasClassName = hasClassName;
 function getElementByClassName(element, className) {
-    var nodes = element.getElementsByClassName(className);
+    let nodes = element.getElementsByClassName(className);
     if (nodes.length > 0) {
         return nodes[0];
     }
@@ -13,7 +13,7 @@ function getElementByClassName(element, className) {
 }
 exports.getElementByClassName = getElementByClassName;
 function getParentElementByClassName(element, className, topParentElementClassName) {
-    var parent = element.parentElement;
+    let parent = element.parentElement;
     while (parent) {
         if (hasClassName(parent, className))
             return parent;
@@ -34,7 +34,7 @@ function isSelfOrChildOf(element, parent, topParent) {
     if (element === parent) {
         return true;
     }
-    var par = element.parentElement;
+    let par = element.parentElement;
     while (par) {
         if (par === parent) {
             return true;

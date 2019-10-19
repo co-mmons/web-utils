@@ -3,10 +3,10 @@
  * Copy of https://github.com/jkroso/prefix
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-var style = typeof document != 'undefined' ? document.createElement('p').style : {};
-var prefixes = ["O", "ms", "Moz", "Webkit"];
-var upper = /([A-Z])/g;
-var memo = {};
+const style = typeof document != 'undefined' ? document.createElement('p').style : {};
+const prefixes = ["O", "ms", "Moz", "Webkit"];
+const upper = /([A-Z])/g;
+const memo = {};
 /**
  * prefix `key`
  *
@@ -17,17 +17,17 @@ var memo = {};
  */
 function prefix(key) {
     // camel case
-    key = key.replace(/-([a-z])/g, function (_, char) { return char.toUpperCase(); });
+    key = key.replace(/-([a-z])/g, (_, char) => char.toUpperCase());
     // without prefix
     if (style[key] !== undefined)
         return key;
     // with prefix
-    var prefixed = key.charAt(0).toUpperCase() + key.slice(1);
-    var i = prefixes.length;
+    let prefixed = key.charAt(0).toUpperCase() + key.slice(1);
+    let i = prefixes.length;
     while (i--) {
-        var name_1 = prefixes[i] + prefixed;
-        if (style[name_1] !== undefined)
-            return name_1;
+        let name = prefixes[i] + prefixed;
+        if (style[name] !== undefined)
+            return name;
     }
     return key;
 }
